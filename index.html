@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div>
+            <h1>Student Management System</h1>
+            <p>Manage student information easily</p>
+        </div>
+
+        <div class="header-buttons">
+
+    <a href="/add" class="add-button">
+        + Add Student
+    </a>
+
+    <a href="/logout" class="logout-button">
+        Logout
+    </a>
+
+</div>
+
+    </div>
+
+
+    <!-- Dashboard Card -->
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <div class="card-icon">👨‍🎓</div>
+
+            <div>
+
+                <h2>{{ students|length }}</h2>
+
+                <p>Total Students</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Search Section -->
+
+    <div class="search-box">
+
+        <h2>Search Students</h2>
+
+        <form method="GET" action="/" class="search-form">
+
+            <input
+                type="text"
+                name="search"
+                placeholder="Search by name, roll number or course..."
+                value="{{ search }}"
+            >
+
+            <button type="submit">
+                🔍 Search
+            </button>
+
+            <a href="/" class="clear-button">
+                Clear
+            </a>
+
+        </form>
+
+    </div>
+
+
+    <!-- Student List -->
+
+    <div class="student-section">
+
+        <h2>Student List</h2>
+
+
+        {% if students %}
+
+        <div class="table-container">
+
+            <table>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+
+                </tr>
+
+
+                {% for student in students %}
+
+                <tr>
+
+                    <td>{{ student.id }}</td>
+
+                    <td>{{ student.name }}</td>
+
+                    <td>{{ student.roll }}</td>
+
+                    <td>{{ student.course }}</td>
+
+                    <td>{{ student.email }}</td>
+
+                    <td>{{ student.phone }}</td>
+
+
+                    <td>
+
+                        <a href="/edit/{{ student.id }}"
+                           class="edit">
+                            Edit
+                        </a>
+
+
+                        <a href="/delete/{{ student.id }}"
+                           class="delete"
+                           onclick="return confirm('Delete this student?')">
+
+                            Delete
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </table>
+
+        </div>
+
+
+        {% else %}
+
+        <div class="empty">
+
+            <p>📭 No students found.</p>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

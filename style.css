@@ -1,0 +1,460 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* Header */
+
+.header {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+.header p {
+    margin-top: 8px;
+    color: #666;
+}
+
+
+/* Add Button */
+
+.add-button {
+    background: #333;
+    color: white;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+
+.add-button:hover {
+    background: #555;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    margin-bottom: 25px;
+}
+
+
+.card {
+    background: white;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.card-icon {
+    font-size: 40px;
+}
+
+
+.card h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+
+.card p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+
+/* Search Box */
+
+.search-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.search-box h2 {
+    margin-top: 0;
+}
+
+
+/* Search Form */
+
+.search-form {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.search-form input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+.search-form button {
+    width: 120px;
+
+    margin-top: 0;
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+.search-form button:hover {
+    background: #555;
+}
+
+
+.clear-button {
+    padding: 12px 20px;
+
+    background: #ddd;
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+}
+
+
+/* Student Section */
+
+.student-section {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.student-section h2 {
+    margin-top: 0;
+}
+
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: center;
+}
+
+
+th {
+    background: #333;
+
+    color: white;
+}
+
+
+tr:hover {
+    background: #f5f5f5;
+}
+
+
+/* Edit */
+
+.edit {
+    color: blue;
+
+    text-decoration: none;
+
+    margin-right: 10px;
+}
+
+
+/* Delete */
+
+.delete {
+    color: red;
+
+    text-decoration: none;
+}
+
+
+/* Empty */
+
+.empty {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+
+/* Form Pages */
+
+.form-container {
+
+    width: 450px;
+
+    max-width: 85%;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container h1 {
+    text-align: center;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 20px;
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #555;
+}
+
+
+.back {
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #333;
+
+    text-decoration: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .search-form {
+        flex-direction: column;
+    }
+
+
+    .search-form button,
+    .clear-button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+
+    .card {
+        width: auto;
+    }
+
+}
+/* Login and Register */
+
+.login-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.error {
+    background: #ffe5e5;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.account-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.account-link a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Header Buttons */
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.logout-button {
+    background: #d9534f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+
+.logout-button:hover {
+    background: #c9302c;
+}
+/* Select and Textarea */
+
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}

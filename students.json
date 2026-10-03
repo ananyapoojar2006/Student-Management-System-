@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Shivani",
+        "roll": "1VA24CS001",
+        "course": "CSE",
+        "email": "Shivanipatil@gmail.com",
+        "phone": "3456788998"
+    },
+    {
+        "id": 2,
+        "name": "Dhanu",
+        "roll": "1VA24CS002",
+        "course": "CSE",
+        "email": "dhanu56@gmail.com",
+        "phone": "4567890989"
+    },
+    {
+        "id": 3,
+        "name": "Ram",
+        "roll": "1VA24CS003",
+        "course": "CSE",
+        "email": "Ram123@gmail.com",
+        "phone": "7896065445",
+        "gender": "Male",
+        "department": "CSE",
+        "semester": "3",
+        "dob": "2007-09-19",
+        "address": "Rajankunte,yelhanka"
+    }
+]
